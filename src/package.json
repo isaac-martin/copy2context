@@ -1,0 +1,16 @@
+{
+  "name": "copy2context",
+  "version": "1.0.0",
+  "description": "",
+  "main": "copy2json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "~3.13.1",
+    "mkdirp": "~0.5.1",
+    "react": "^16.10.2"
+  }
+}

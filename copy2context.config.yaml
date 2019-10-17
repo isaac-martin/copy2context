@@ -1,0 +1,4 @@
+copyDirectories:
+  en: copy/en-US
+  fr: copy/fr
+ouptutDirectory: src/copy
