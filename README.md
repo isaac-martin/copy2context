@@ -43,12 +43,11 @@ const App = () => {
 The examples below are using this yaml file as a reference
 
 ```yaml
-// index.yaml
 title: Welcome to my site
 listItems: 
-	one: list item one
-	two: list item two
-	three: list item three
+ one: list item one
+ two: list item two
+ three: list item three
 welcomeText: Welcome {userName}, your last login was {lastLoginDate}
 	
 ````
