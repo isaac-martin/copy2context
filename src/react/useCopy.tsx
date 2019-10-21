@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { CopyContext } from './Context'
-import util, { getFullCopyKey } from './utils'
+import util, { getFullCopyKey } from './util'
 
 const useCopy = (copyBase?: string) => {
 	const copy = useContext(CopyContext)

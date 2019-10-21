@@ -1,0 +1,31 @@
+{
+  "name": "@copy2context/react",
+  "version": "0.0.1",
+  "description": "React Package for taking yaml files and giving you some react hooks and a context provider",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "yarn build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaac-martin/copy2context.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaac-martin/copy2context/issues"
+  },
+  "homepage": "https://github.com/isaac-martin/copy2context#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "16.8.0"
+  }
+}
