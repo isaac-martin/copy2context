@@ -1,12 +1,14 @@
 {
   "name": "@copy2context/react",
-  "version": "0.0.1",
+  "version": "0.0.10",
   "description": "React Package for taking yaml files and giving you some react hooks and a context provider",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "yarn build && npm publish"
+    "webpack": "webpack --mode production",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "yarn webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,16 @@
   "homepage": "https://github.com/isaac-martin/copy2context#readme",
   "devDependencies": {
     "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.0.11",
     "babel-loader": "^8.0.6",
+    "fork-ts-checker-webpack-plugin": "1.5.0",
+    "typescript": "^3.6.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
   },

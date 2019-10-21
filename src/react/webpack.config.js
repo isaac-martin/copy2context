@@ -1,24 +1,21 @@
-const path = require('path');
+var path = require('path');
 
 module.exports = {
-  mode: 'production',
-  entry: './index.tsx',
-  target: 'node',
+  entry: './src/index',
   output: {
-    path: path.resolve('dist'),
-    filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js'
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json']
   },
   module: {
     rules: [
       {
-        test: /\.js?$/,
-        exclude: /(node_modules)/,
-        use: 'babel-loader'
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       }
     ]
-  },
-  resolve: {
-    extensions: ['.js']
   }
 };
